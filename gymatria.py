@@ -58,7 +58,7 @@ class Gymatria:
     @classmethod
     def get_value(cls,expression:str =None) -> int:
         if expression == None:
-            raise TypeError('invalid type')
+            raise ValueError('invalid type')
         aleph_beth = cls.get_aleph_beth()
         expr_value = 0
         for ot in expression:
