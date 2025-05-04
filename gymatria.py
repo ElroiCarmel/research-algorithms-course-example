@@ -22,7 +22,7 @@ class Gymatria:
     def __add__(self, other) -> int:
         if type(other) == int or type(other) == float:
             return self.expr_value + int(other)
-        return self.expr_value + other.expr_value + 1
+        return self.expr_value + other.expr_value + 2
 
     def __sub__(self, other) -> int:
         if type(other) == int or type(other) == float:
